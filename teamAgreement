@@ -1,0 +1,8 @@
+We should:
+
+1)Try to communicate once per day, but at least once every three days.
+2)Push new features into a new branch, and not pull into main until milestone is reached.
+3)Not create changes in main branch
+4)Communicate with issues that need to be fixed
+
+Add more if needed
