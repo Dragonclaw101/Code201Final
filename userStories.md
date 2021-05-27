@@ -1,0 +1,15 @@
+### User Stories for Choose your own adventure
+ - ## Developer
+    - We want text to be displayed, and a event listener to be able to choose the reaction
+    - User creates character name
+    - after event listener triggered new text appears
+    - go back a step
+    - once you get to the end you should be able to reset
+    - Semi-good CSS
+    - Extra: set of images of the characters
+    - Extra: Sound
+    - Extra: Multiple starting settings
+ - ## User
+    - To be able to veiw text and make decisions
+    - Choose their character name
+    - Reset when complete
