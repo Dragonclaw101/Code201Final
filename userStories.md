@@ -3,13 +3,15 @@
     - We want text to be displayed, and a event listener to be able to choose the reaction
     - User creates character name
     - after event listener triggered new text appears
-    - go back a step
+    - go back a step and have the back button poof once used but come back next time it moves foward
     - once you get to the end you should be able to reset
     - Semi-good CSS
     - Extra: set of images of the characters
     - Extra: Sound
     - Extra: Multiple starting settings
  - ## User
-    - To be able to veiw text and make decisions
+    - To be able to view text and make decisions
     - Choose their character name
     - Reset when complete
+    - To be able to go back one decison
+    - Extras: Images for characters, sound, and multiple starting settings
