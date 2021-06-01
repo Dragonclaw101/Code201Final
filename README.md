@@ -21,7 +21,7 @@ We will create a CYOA story website.
     - go back a step and have the back button poof once used but come back next time it moves foward
     - once you get to the end you should be able to reset
     - Semi-good CSS
-    - Extra: set of images of the characters
+    - Set of images of the characters
     - Extra: Sound
     - Extra: Multiple starting settings
  - ## User
@@ -29,7 +29,8 @@ We will create a CYOA story website.
     - Choose their character name
     - Reset when complete
     - To be able to go back one decison
-    - Extras: Images for characters, sound, and multiple starting settings
+    - Images for characters
+    - Extras: Sound and multiple starting settings
 
 
     ## Requirements

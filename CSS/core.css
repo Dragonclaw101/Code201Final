@@ -1,5 +1,6 @@
 html, body {
-    height: 100%
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   body > * {
@@ -7,7 +8,7 @@ html, body {
   }
   
   body > header, body > footer {
-    background: cornflowerblue;
+    background: #AE24DB;
     color: #eee;
     height: 70px;
     line-height:70px;
@@ -23,17 +24,28 @@ html, body {
   }
   
   main > aside {
-    background: burlywood;
+    background: #51DB24;
     height: 100%
   }
   
   main > nav {
-    background: burlywood;
+    background: #51DB24;
     height: 100%
+  }
+  main > .content > .deck > #buttonContainer > button {
+    background: #AE24DB;
+    border: 4px solid purple;
+    border-radius: 15%;
+    color: #eee;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 50%;
+    width: 170px;
   }
   
   .deck {
-    background: antiquewhite;
+    background: whitesmoke;
   }
   
   .deck:first-child {
@@ -46,4 +58,28 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #resetButton {
+    margin-bottom: 150px;
+    margin-top: 30px;
+    height: 120px;
+    width: 140px;
+    font-size: 150%;
+    background: #2DD0D2;
+    border: 5px solid #399DC6;
+    border-radius: 15%;
+    color: white;
+  }
+
+  #backButton {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 140px;
+    font-size: 150%;
+    background: #2DD0D2;
+    border: 5px solid #399DC6;
+    border-radius: 15%;
+    color: white;
   }
