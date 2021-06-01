@@ -1,0 +1,49 @@
+html, body {
+    height: 100%
+  }
+  
+  body > * {
+    border:1px solid #000;
+  }
+  
+  body > header, body > footer {
+    background: cornflowerblue;
+    color: #eee;
+    height: 70px;
+    line-height:70px;
+    text-align:center;
+  }
+  
+  main {
+    background: #fafafa
+  }
+  
+  main > .content {
+    background: #000;
+  }
+  
+  main > aside {
+    background: burlywood;
+    height: 100%
+  }
+  
+  main > nav {
+    background: burlywood;
+    height: 100%
+  }
+  
+  .deck {
+    background: antiquewhite;
+  }
+  
+  .deck:first-child {
+    border-bottom: 1px solid black
+  }
+  
+  
+  .centerWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
