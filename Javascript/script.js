@@ -9,4 +9,22 @@ console.log('Hello world');
 - Semi-good CSS
 - Set of images of the characters
 - Extra: Sound
-- Extra: Multiple starting settings*/
+- Extra: Multiple starting settings
+1. Event Listener - Button for click
+2a. Database for choice
+2b. function that creates text
+3. Reset button function
+4. Go back button function
+5. Database for Character Images
+6. If time sound
+7. If have tons of time extra starting settings*/
+let reset = document.getElementById('resetButton');
+reset.addEventListener('click', resetFunc);
+function resetFunc() {
+    console.log('Reset console.log Triggered');
+}
+let goBack = document.getElementById('backButton');
+goBack.addEventListener('click', backFunc);
+function backFunc() {
+    console.log('Go back console.log Triggered');
+}
