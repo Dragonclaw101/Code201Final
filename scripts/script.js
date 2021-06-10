@@ -19,13 +19,6 @@ console.log('Hello world');
 6. If time sound
 7. If have tons of time extra starting settings*/
 
-// var buttonArray = [
-//     {id:'startButtons', text1: 'Click here if you would like to be hired as a product mover.', text2:'Click here if you would like to take the position of cabin boy.'},
-//     {id:'cabinBoy', text1:'If you would like to start organizing the documents, click here.',text2:'To clean up the food mess, click here.',text3:'If you would like to pick up the captain’s clothes, click here.'},
-
-// ]
-
-
 var textArray = [
     {id:'start',text:'High seas and dashing adventure - something you’ve dreamed about since you were young. In a village composed of fishermen and merchants, your chances of freedom were once in a lifetime. And that chance had come today. A foreign merchant ship was looking for recruits, strong workers who could aid in moving goods. A cabin boy position was also open, something that might appeal to you as lighter labor. '},
     {id:'mover',text:'The captain nods and accepts you as a product mover without so much as a word to you. You begin loading some of the products onto the ship. They are in unlabeled boxes, and they feel very heavy. You thought they felt like weapons, or possibly gold, but you weren’t sure. There were some barrels full of dried meat and water, but someone else had already grabbed them.\n\nThe ship takes off as you load the last box. You make your way to a seat on the deck, tilting your head back and closing your eyes. The crew around you is engaging in small talk, stuff you can’t hear very well.\n\nThe ship takes off soon, and you relax a bit as you get to the open sea. There isn’t much for you to do now, except if the captain orders you to. You have no time to ponder your new freedom as a shot is fired in your direction. You turn to see an enemy ship approaching.'},
@@ -48,7 +41,26 @@ var buttonArray = [
     {id:'deckChoices',text1:'Click here to return to the cabin',text2:'Click here to stay and fight'},
 ];
 
+function init(){
+    let textContent = document.querySelector('#reactionText');
 
+    textContent.textContent = textArray[0].text;
+
+    let buttonContainer = document.querySelector('#buttonContainer');
+    
+    var buttonOne = document.createElement('button');
+    buttonOne.textContent = 'Click here to become a cabin boy';
+
+    var buttonTwo = document.createElement('button');
+    buttonTwo.textContent = 'Click here to become a mover.';
+
+    buttonContainer.appendChild(buttonOne);
+    buttonContainer.appendChild(buttonTwo);
+}
+
+
+let reset = document.getElementById('resetButton');
+reset.addEventListener('click',init);
 
 let reset = document.getElementById('resetButton');
 reset.addEventListener('click', resetFunc);
@@ -118,3 +130,5 @@ goBack.addEventListener('click', backFunc);
 function backFunc() {
     console.log('Go back console.log Triggered');
 }
+
+init();
