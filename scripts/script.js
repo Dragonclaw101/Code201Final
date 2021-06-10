@@ -41,26 +41,23 @@ var buttonArray = [
     {id:'deckChoices',text1:'Click here to return to the cabin',text2:'Click here to stay and fight'},
 ];
 
-function init(){
-    let textContent = document.querySelector('#reactionText');
+// function init(){
+//     let textContent = document.querySelector('#reactionText');
 
-    textContent.textContent = textArray[0].text;
+//     textContent.textContent = textArray[0].text;
 
-    let buttonContainer = document.querySelector('#buttonContainer');
+//     let buttonContainer = document.querySelector('#buttonContainer');
     
-    var buttonOne = document.createElement('button');
-    buttonOne.textContent = 'Click here to become a cabin boy';
+//     var buttonOne = document.createElement('button');
+//     buttonOne.textContent = 'Click here to become a cabin boy';
 
-    var buttonTwo = document.createElement('button');
-    buttonTwo.textContent = 'Click here to become a mover.';
+//     var buttonTwo = document.createElement('button');
+//     buttonTwo.textContent = 'Click here to become a mover.';
 
-    buttonContainer.appendChild(buttonOne);
-    buttonContainer.appendChild(buttonTwo);
-}
+//     buttonContainer.appendChild(buttonOne);
+//     buttonContainer.appendChild(buttonTwo);
+// }
 
-
-let reset = document.getElementById('resetButton');
-reset.addEventListener('click',init);
 
 let reset = document.getElementById('resetButton');
 reset.addEventListener('click', resetFunc);
@@ -68,9 +65,9 @@ function resetFunc() {
     let target = document.getElementById('reactionText');
     target.textContent = textArray[0].text;
     let target0 = document.getElementById('option0');
-    target0.textContent = buttonArray[0].text1;
+    target0.textContent = buttonArray[1].text1;
     let target1 = document.getElementById('option1');
-    target1.textContent = buttonArray[0].text2;
+    target1.textContent = buttonArray[1].text2;
     let target2 = document.getElementById('option2');
     target2.textContent = 'Option 3';
     let target3 = document.getElementById('option3');
@@ -130,5 +127,4 @@ goBack.addEventListener('click', backFunc);
 function backFunc() {
     console.log('Go back console.log Triggered');
 }
-
-init();
+// init();
