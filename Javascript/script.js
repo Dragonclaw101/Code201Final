@@ -25,7 +25,7 @@ var textArray = [
     {id:'food', text:"You wrinkle your nose as you set to cleaning up the food. It’s full of rotting mean and stale bread. Much of the food is covered in a slippery slime, and it takes a long time to pick everything up. You only manage to get through half of the pile before giving up. It’s too gross to continue. You pick yourself up, and look around the cabin. The papers are still a mess, and the clothes on the floor seem to smell even worse now. You can’t seem to put yourself in the mood to clean anything, so you lean against the cabin wall, regaining your composure. "},
     {id:'deck', text:"You exit the cabin to get a whiff of fresh air. The crew is rushing around and shouting at one another, and no one seems to notice you. You take in a large breath of the salty breeze, calming down. You feel incredibly relieved to be out of that disgusting cabin. You look around the deck, and notice that the crew seems to be acting strange. They seem to be practicing sword fighting, and some are guzzling ale. It seems strange for a merchant ship, but you try to ignore it. As you ready yourself to go back into the rancid cabin, someone shouts something indiscernable from the lookout mast. The crew leaps to their feet, some going below deck, and others grabbing weapons."},
     {id:'clothes', text:"You begin to toss the captain’s clothes into a bin. You realize that this was an incredibly easy task when you finish in a matter of minutes. "},
-    {id:'cabin', text:"You dive back into the cabin, avoiding the gunfire that has begun. You decide it would be safer to stay indoors during… Whatever this is. As you try to focus on getting everything clean, you hear an explosion outside, and the ship turns. You try to find something to cling to, but everything is tumbling over. Water crashes through the widows, filling the cabin. The shijp is going down. You let out a whimper as water fills the cabin. It doesn’t take long for the entire cabin to fill, and even less time for darkness to overtake you."},
+    {id:'cabin', text:"You dive back into the cabin, avoiding the gunfire that has begun. You decide it would be safer to stay indoors during… Whatever this is. As you try to focus on getting everything clean, you hear an explosion outside, and the ship turns. You try to find something to cling to, but everything is tumbling over. Water crashes through the widows, filling the cabin. The ship is going down. You let out a whimper as water fills the cabin. It doesn’t take long for the entire cabin to fill, and even less time for darkness to overtake you."},
 ]
 var buttonArray = [
     {id:'startButtons', text1: 'Click here if you would like to be hired as a product mover.', text2:'Click here if you would like to take the position of cabin boy.'},
@@ -59,7 +59,7 @@ function resetFunc() {
     button1.addEventListener('click', cabinBoy);
 }
 function cabinBoy() {
-    alert("You have choosen to be a Cabin boy");
+    alert("You have chosen to be a Cabin boy");
     let remove = document.getElementById('option1');
     remove.removeEventListener('click', cabinBoy);
     let remove1 = document.getElementById('option0');
@@ -75,9 +75,11 @@ function cabinBoy() {
     target0.addEventListener('click', documents);
     target1.addEventListener('click', food);
     target2.addEventListener('click', clothes);
+    let back = document.getElementById('backButton');
+    back.addEventListener('click', resetFunc);
 }
 function documents() {
-    alert('You have choosen to organize the documents');
+    alert('You have chosen to organize the documents');
     let target0 = document.getElementById('option0');
     target0.textContent = 'Option 1'
     target0.removeEventListener('click', documents);
@@ -91,7 +93,7 @@ function documents() {
     text.textContent = textArray[2].text;
 }
 function food() {
-    alert('You have choosen to clean the food mess');
+    alert('You have chosen to clean the food mess');
     let reaction = document.getElementById('reactionText');
     reaction.textContent = textArray[3].text;
     resetText();
@@ -108,7 +110,7 @@ function food() {
     target1.addEventListener('click', countinueCleaing);
 }
 function deck() {
-    alert('You have choosen to go on the deck');
+    alert('You have chosen to go on the deck');
     resetText();
     let reaction = document.getElementById('reactionText');
     reaction.textContent = textArray[4].text;
@@ -123,12 +125,12 @@ function deck() {
     target1.addEventListener('click', cabin);
 }
 function staydeck() {
-    alert("I'm sorry but this option is only for premium users, you can go to www.CYOA.com/premium to add a premium subscription");
+    alert("I'm sorry but this option is only for premium users, you can go to www.CYOA.com/premium to add a premium subscription for $129.99");
     let remove = document.getElementById('option0');
     remove.removeEventListener('click', staydeck);
 }
 function cabin() {
-    alert("You have choosen to rub back into the cabin");
+    alert("You have chosen to run back into the cabin");
     resetListeners();
     resetText();
     let target = document.getElementById('reactionText');
@@ -137,12 +139,12 @@ function cabin() {
     target2.textContent = 'The End';
 }
 function countinueCleaing() {
-    alert("I'm sorry but this option isn't avaiable at this time");
+    alert("I'm sorry but this option is only for premium users, you can go to www.CYOA.com/premium to add a premium subscription for $129.99");
     let remove = document.getElementById('option1');
-    remove.removeEventListener('click', countinueCleaing);6
+    remove.removeEventListener('click', countinueCleaing);
 }
 function clothes() {
-    alert("You have choosen to clean the clothes");
+    alert("You have chosen to clean the clothes");
     let target = document.getElementById('reactionText');
     let target0 = document.getElementById('option0');
     let target1 = document.getElementById('option1');
@@ -159,15 +161,12 @@ function clothes() {
     target1.addEventListener('click', food);
 }
 function productMover() {
-    alert("I'm sorry but that option is not avaible at this time");
+    alert("I'm sorry but this option is only for premium users, you can go to www.CYOA.com/premium to add a premium subscription for $129.99");
     let remove = document.getElementById('option0');
     remove.removeEventListener('click', productMover);
 }
 let goBack = document.getElementById('backButton');
 goBack.addEventListener('click', backFunc);
-function backFunc() {
-    console.log('Go back console.log Triggered');
-}
 function resetText() {
     let target0 = document.getElementById('option0');
     let target1 = document.getElementById('option1');
@@ -188,4 +187,6 @@ function resetListeners() {
 (function startUp() {
     let target = document.getElementById('reactionText');
     target.textContent = 'This is where the text goes for what happens when you choose your choice. Click Reset to start.'
+    resetText();
+    resetListeners();
 })();
