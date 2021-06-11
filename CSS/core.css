@@ -25,7 +25,13 @@ html, body {
   
   main > aside {
     background: #51DB24;
-    height: 100%
+    color: #eee;
+    height: 100%;
+  }
+  
+  main > aside > p {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   main > nav {
@@ -35,13 +41,14 @@ html, body {
   main > .content > .deck > #buttonContainer > button {
     background: #AE24DB;
     border: 4px solid purple;
+    font-size: 120%;
     border-radius: 15%;
     color: #eee;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     height: 50%;
-    width: 170px;
+    width: 140px;
   }
   
   .deck {
