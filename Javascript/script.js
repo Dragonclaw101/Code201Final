@@ -20,7 +20,7 @@ console.log('Hello world');
 7. If have tons of time extra starting settings*/
 var textArray = [
     {id0:'start', text:"High seas and dashing adventure - something you’ve dreamed about since you were young. In a village composed of fishermen and merchants, your chances of freedom were once in a lifetime. And that chance had come today. A foreign merchant ship was looking for recruits, strong workers who could aid in moving goods. A cabin boy position was also open, something that might appeal to you as lighter labor."},
-    {id1:'cabinBoy', text:"The merchant captain had looked at you with a frown but approved your position. “A waste of a strong hand,” he had said, “but we’ll get to that later.” You were off in a matter of minutes, as the sailors were eager to get out of port. Your first order of business was straightening the captain’s cabin. It was a royal mess, papers, and documents strewn everywhere. Dirty clothes littered the floor, and decaying food bits were stacked in the corner.  The whole room stank, and cleaning it could take a while."},
+    {id1:'cabinBoy', text:"The merchant captain had looked at you with a frown but approved your position. “A waste of a strong hand,” he had said, “but we’ll get to that later.” You were off in a matter of minutes, as the sailors were eager to get out of port. Your first order of business was straightening the captain’s cabin. It was a royal mess, papers, and documents strewn everywhere with a beautiful painting upon the wall. Dirty clothes littered the floor, and decaying food bits were stacked in the corner.  The whole room stank, and cleaning it could take a while."},
     {id2:'documents', text:"You set to organizing the captain’s documents. Some of them look important, resembling maps and trade agreements. You read a little, and as you come across some you try to decipher the captain’s handwriting. As you read, you discover that he lied about being a merchant. The crew is really a pirate crew. You can hardly believe your luck! There seems to be some treasure on board somewhere, and it wouldn’t be too hard to find. You decide to search for the treasure. You sneak out of the cabin, creeping down into the hold of the ship. There are a few crew members around, snoring loudly. As you move some stuff around, you see something shiny. You make your way towards it, and discover a chalice filled with jewels. You reach for it, and a gruff voice sounds behind you. “Hey! You there! You weren’t thinkin’ of stealing my treasure, were ya?” You whirl around to face the captain, heart pounding. Words escape you at the moment, and you can think of nothing you can say to defend yourself. The captain grabs you by the arm, dragging you away from the treasure. He shoves you into a small cell, sneering as he does so. “That’ll teach ya. You’ll be stayin’ there until we find a nice island to drop ya off at.”"},
     {id3:'food', text:"You wrinkle your nose as you set to cleaning up the food. It’s full of rotting mean and stale bread. Much of the food is covered in a slippery slime, and it takes a long time to pick everything up. You only manage to get through half of the pile before giving up. It’s too gross to continue. You pick yourself up, and look around the cabin. The papers are still a mess, and the clothes on the floor seem to smell even worse now. You can’t seem to put yourself in the mood to clean anything, so you lean against the cabin wall, regaining your composure. "},
     {id4:'deck', text:"You exit the cabin to get a whiff of fresh air. The crew is rushing around and shouting at one another, and no one seems to notice you. You take in a large breath of the salty breeze, calming down. You feel incredibly relieved to be out of that disgusting cabin. You look around the deck, and notice that the crew seems to be acting strange. They seem to be practicing sword fighting, and some are guzzling ale. It seems strange for a merchant ship, but you try to ignore it. As you ready yourself to go back into the rancid cabin, someone shouts something indiscernable from the lookout mast. The crew leaps to their feet, some going below deck, and others grabbing weapons."},
@@ -30,8 +30,10 @@ var textArray = [
     {id8:'staydeck', text:"You stand your ground, facing where the crew seems to be looking. A pirate ship seems to be looming in the distance. Your stomach leaps into your throat and the ship fires a warning shot, and you break into a cold sweat when your ship returns fire. A cannonball crashes into the deck a few feet away from you, and you dive to the side. As you recover, someone shouts something over the noise and tosses a musket in your direction. You fire blindly at the other ship, stopping only to reload and dive behind barrels and fallen bits of wood. You don’t know how long the fight has been going on. It could have been hours, and your hands are burning from the constant movement of gunpowder. Eventually, however, the firing stops. You peek your head out and see that the other ship has waved a flag of surrender. Your crew erupts into cheers, and you find yourself doing the same. Everyone begins to rush to plunder the other ship, whooping about the large amounts of treasure that must be on board. You realize that you have been on a pirate ship all along, a fate you aren’t too displeased about. You yourself let out a long holler and rush aboard the other ship with your mates."},
     {id9:'overboard', text:"You leap over the railing, as someone screams “Mutiny!” on board. You don’t have time to concern yourself with that, as you are more focused on swimming to safety, wherever that may be. Cannonballs fall around you, some missing you by mere inches. You’re not sure where you are swimming to, just that you are swimming for dear life. You get hit by one of the many cannonballs, perhaps even flung over by a member of your former crew. You slip into unconsciousness, sinking deep into the sea."},
     {id10:'countinueCleaning', text:"With a heavy sigh, you start in on the food mess again. The heavy stench seems to stick to you, and you wonder why you took this job. You long to go outside, and get some fresh air, but you know you’ll never return to the cabin if you were to do so. You keep cleaning, for what seems to be an eternity. Perhaps it is so, and you begin to time yourself. You lose track after a few weeks and resign yourself to an eternity of cleaning rotten food off of the floor. "},
-    {id11:'painting', text:"You decide to go over to a painting upon the wall, it seems strange to you. It doesn’t appear like it’s supposed to be there. You put your hands on the sides and your finger slips into a slight divot in the painting, you pull on it, and the painting swings upon, revealing a large treasure chest overflowing with gold, jewels, and golden trinkets. You immediately look at the door expecting your luck to run dry, however, nothing happens. "},
-    {id12:'stealIt', text:"You decide to close the painting and come back in the night. You sneak out of your bed up to the deck and you hear the men on duty talking, “How long do ye think it will be until the cabin boy figures out we’re a pirate ship?” “If that boy hasn’t figured us out yet, I doubt he ever will”. They laugh quietly and you sneak past them and quietly enter the cabin. The pirate captain is sleeping quietly on his bed, you move over to the painting and open it. The chest is still there, you grab it and go on the deck and hide behind a barrel. The pirates on deck eventually go down to wake the next shift. You run across the deck and hop in a lifeboat, cut the line, and splash in the water. After a few days of rowing, you come across civilization, and live like a Minor Noble for the rest of your life."},
+    {id11:'painting', text:"You decide to go over to the painting upon the wall, it seems strange to you. It doesn’t appear like it’s supposed to be there. You put your hands on the sides and your finger slips into a slight divot in the painting, you pull on it, and the painting swings upon, revealing a large treasure chest overflowing with gold, jewels, and golden trinkets. You immediately look at the door expecting your luck to run dry, however, nothing happens. "},
+    {id12:'stealIt', text:"You decide to close the painting and come back in the night. You sneak out of your bed up to the deck and you hear the men on duty talking, “How long do ye think it will be until the cabin boy figures out we’re a pirate ship?” “If that boy hasn’t figured us out yet, I doubt he ever will”. They laugh quietly and you sneak past them and quietly enter the cabin. The pirate captain is sleeping quietly on his bed, you move over to the painting and open it. The chest is still there, you grab it and go on the deck and hide behind a barrel."},
+    {id13:'wait', text:"The pirates on deck eventually go down to wake the next shift. You run across the deck and hop in a lifeboat, cut the line, and splash in the water. After a few days of rowing, you come across civilization and live like a Minor Noble for the rest of your life."},
+    {id14:'run', text:"You attempt to quickly dash across the deck but fumble with the weight of the treasure chest, dropping it. The pirates on deck immediately notice and pull out their pistols. You grab a sword off the deck. The pirates step towards you and say, “Whatcha think you’re doing there boy? Stealing the capt’ins treasure aye?”. You try to bribe them but no words come out. The second one calls the captain out. “So...this is how you repay by generosity, by stealing my treasure...”. He starts his way towards you and you decide to swing your sword, but your inexperience leads to you missing and the captain rips the sword from your hand and stabs it into your belly. You instantly feel weak and tired, you sink to your knees and the captain pushes you into the ocean, never to be seen again."},
 ]
 var buttonArray = [
     {id:'startButtons', text1: 'Click here if you would like to be hired as a product mover.', text2:'Click here if you would like to take the position of cabin boy.'},
@@ -41,6 +43,7 @@ var buttonArray = [
     {id:'clothes', text1:'Click here if you would like to work on the documents.',text2:'Click here if you would like to work on the food mess. '},
     {id:'productMover', text1:"Click here if you would like to stay and fight(deck)", text2:"Click here if you want to jump overboard"},
     {id:'painting', text1:"Click here if you want to steal it", text2:"Click here to ignore it and keep cleaning"},
+    {id:'stealIt', text1:"Click here to wait for the pirates to change shifts", text2:"Click here to make a run for it"},
 ]
 
 let reset = document.getElementById('resetButton');
@@ -230,6 +233,7 @@ function painting() {
     let target2 = document.getElementById('option2');
     target2.textContent = 'Option 3';
     let target4 = document.getElementById('option4');
+    target4.textContent = 'Option 5';
     target4.removeEventListener('click', painting);
     target0.removeEventListener('click', documents);
     target1.removeEventListener('click', food);
@@ -242,10 +246,34 @@ function stealIt() {
     reaction.textContent = textArray[12].text;
     let target0 = document.getElementById('option0');
     let target1 = document.getElementById('option1');
+    target0.textContent = buttonArray[7].text1;
+    target1.textContent = buttonArray[7].text2;
+    target0.addEventListener('click', wait);
+    target1.addEventListener('click', run);
+}
+function wait() {
+    alert('You have chosen to wait for the next shift change.');
+    resetListeners();
+    let reaction = document.getElementById('reactionText');
+    let target0 = document.getElementById('option0');
+    let target1 = document.getElementById('option1');
     let target2 = document.getElementById('option2');
-    target0.textContent = 'Option 1';
-    target1.textContent = 'Option 2';
-    target2.textContent = 'The end';
+    reaction.textContent = textArray[13].text;
+    target0.textContent = 'Option1';
+    target1.textContent = 'Option2';
+    target2.textContent = 'The End.';
+}
+function run() {
+    alert("You have chosen to make a run for it.");
+    resetListeners();
+    let reaction = document.getElementById('reactionText');
+    let target0 = document.getElementById('option0');
+    let target1 = document.getElementById('option1');
+    let target2 = document.getElementById('option2');
+    reaction.textContent = textArray[14].text;
+    target0.textContent = 'Option1';
+    target1.textContent = 'Option2';
+    target2.textContent = 'The End.';
 }
 function resetText() {
     let target0 = document.getElementById('option0');
